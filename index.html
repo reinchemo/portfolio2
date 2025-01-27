@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Portfolio </title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!--body-->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello,It's Me</h3>
+            <h1>Reinhard</h1>
+            <h3>And I'm a <span class=""></span>Website Developer&nbsp;&nbsp;&nbsp;</h3>
+
+            <a href="./myproject/image/Reinhard Chemonges Resume.pdf" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="./myproject/image/REIN LATEST2.png" alt="">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./myproject/image/black desk.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About<span>Me</span></h2>
+            <h3>Website Developer</h3>
+            <p>I am a skilled full-stack developer specializing in creating websites, PowerPoint slides, and Posters. With strong programming abilities, I design and build efficient, user-friendly systems, and I am also a dedicated coding tutor.</p>
+
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2 class="heading">My<span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Motivated designer and developer with experience creating custom websites.Strong collaboration skills and proven history of application development.</p>
+                <a href="./myproject/image/Web Rate Card.pdf" class="btn">Click to view Rate Card</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-crop'></i>
+                <h3>Graphics Design</h3>
+                <p>You cannot make a good design if you do not understand people; design is made for people.</p>
+                <a href="./myproject/image/Graphics Design Rate Card.pdf" class="btn">Click to view Rate Card</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-pen'></i>
+                <h3>Coding Tutor</h3>
+                <p>From beginner level you will learn all the basics of coding and become a pro.
+                </p>
+                <a href="./myproject/image/Computer and Coding[1].pdf" class="btn">Click to view Rate Card</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxs-book'></i>
+                <h3>Projects Assistant</h3>
+                <p>The main goal is to create modern, attractive and user-friendly designs and find creative and simple solutions for you.
+                </p>
+                <a href="./myproject/image/Project rate card (1).pdf" class="btn">Click to view Rate Card</a>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading"> My Latest<span>Projects</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="myproject/image/jan-vlacuha-Rns_A8bJ_dQ-unsplash.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>A job Application Portal</h4>
+                    <p>The online Job portal is designed to connect job seekers with employers. The platform hosts job listings, streamlines the application process, and facilitates communication between candidates and employers throughout the recruitment
+                        cycle. Additionally, it includes an admin panel that allows for the review and management of applications, ensuring efficient oversight of the recruitment process.</p>
+                    <a href="https://diligentstaffing.co.ke/"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="myproject/image/austin-poon-JO_S6ewBqAk-unsplash.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Online Electric Shop</h4>
+                    <p> This Site offers a comprehensive range of electrical products and equipment, including appliances like light bulbs and switches, wiring accessories, and tools. The platform also provides options for installation services and repairs,
+                        offering customers a one-stop solution for their electrical needs.</p>
+                    <a href="https://mwanzishi.com/"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="myproject/image/nubelson-fernandes--Xqckh_XVU4-unsplash.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Multi-Vendor E-commerce Site</h4>
+                    <p>This Site offers a Marketplace system offering a variety of products, including real estate, bikes, and jewellery. Key features include detailed listings, secure transactions, and an intuitive interface for easy navigation and search,
+                        ensuring a seamless shopping experience for users.</p>
+                    <a href="https://esokothriveglobal.com/"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact<span>ME!</span></h2>
+
+        <form action="https://formspree.io/f/xldgjdwr" method="POST">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+
+
+        <span id="msg"></span>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by Reinhard All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzFPVGxI-75Ilkm2z_EMuI9ubPlp8-7dQmMzzdPiIunLPPzj3bcY1ohMdT_DfZ3zPwhTA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function() {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
+</body>
+
+</html>
