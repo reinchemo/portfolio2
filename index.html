@@ -114,14 +114,37 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact<span>ME!</span></h2>
 
-        <form action="https://formspree.io/f/xldgjdwr" method="POST">
-            <div class="input-box">
-                <input type="text" name="name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-            </div>
-            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
+     <form id="whatsappForm">
+    <div class="input-box">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+    </div>
+    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+    <input type="submit" value="Send Message" class="btn">
+</form>
+
+<script>
+    document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const name = this.querySelector('input[name="name"]').value.trim();
+        const email = this.querySelector('input[name="email"]').value.trim();
+        const message = this.querySelector('textarea[name="message"]').value.trim();
+        
+        if (!name || !email || !message) {
+            alert('Please fill in all fields');
+            return;
+        }
+        
+        const phoneNumber = '254759592457';
+        const whatsappMessage = 
+            `Name: ${encodeURIComponent(name)}%0A` +
+            `Email: ${encodeURIComponent(email)}%0A%0A` +
+            `Message: ${encodeURIComponent(message)}`;
+        
+        window.open(`https://wa.me/${phoneNumber}?text=${whatsappMessage}`, '_blank');
+    });
+</script>
 
 
         <span id="msg"></span>
